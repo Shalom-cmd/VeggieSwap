@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542827107517",
+    "project_id": "veggieswap-b01c0",
+    "storage_bucket": "veggieswap-b01c0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542827107517:android:a3c27289d9b317504b93d4",
+        "android_client_info": {
+          "package_name": "com.example.veggie_swap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByT3t7MtR2CtfhNfGrQ3E-XZTjlAwqGyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
