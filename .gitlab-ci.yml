@@ -1,0 +1,20 @@
+stages:
+  - deploy
+# Use Flutter Docker image
+pages:
+  image: ghcr.io/cirruslabs/flutter:latest
+  stage: deploy
+  before_script:
+    - cd veggie_swap # Move into the assignment_project7 folder
+    - flutter pub get         # Get the dependencies for the Flutter project
+  script:
+
+
+    - flutter build web --release  # Build the Flutter web project
+    - cp -r build/web ../public    # Copy the build output to the public directory
+  artifacts:
+    paths:
+      - public  # This is the folder that will be served as the GitLab Pages site
+  rules:
+    - if: $CI_COMMIT_BRANCH == "VeggieSwap"  # Make sure this matches your branch name
+  environment: production
